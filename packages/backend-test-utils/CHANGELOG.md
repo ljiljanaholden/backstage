@@ -1,5 +1,12 @@
 # @backstage/backend-test-utils
 
+## 0.1.26-next.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/backend-common@0.14.1-next.0
+
 ## 0.1.25
 
 ### Patch Changes

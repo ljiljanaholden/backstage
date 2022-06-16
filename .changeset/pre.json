@@ -156,7 +156,27 @@
     "@backstage/plugin-user-settings": "0.4.5",
     "@backstage/plugin-vault": "0.1.0",
     "@backstage/plugin-vault-backend": "0.1.0",
-    "@backstage/plugin-xcmetrics": "0.2.26"
+    "@backstage/plugin-xcmetrics": "0.2.26",
+    "@backstage/plugin-api-docs-module-protoc-gen-doc": "0.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "beige-horses-scream",
+    "chilled-mirrors-grab",
+    "curvy-weeks-matter",
+    "eleven-mice-collect",
+    "great-roses-pump",
+    "large-kangaroos-poke",
+    "modern-ducks-lay",
+    "nervous-humans-sip",
+    "polite-eagles-invite",
+    "red-games-decide",
+    "renovate-9454dab",
+    "shaggy-melons-drive",
+    "short-olives-train",
+    "sweet-plants-sparkle",
+    "thick-radios-drive",
+    "unlucky-stingrays-juggle",
+    "wet-dolphins-act",
+    "wicked-icons-grin"
+  ]
 }
