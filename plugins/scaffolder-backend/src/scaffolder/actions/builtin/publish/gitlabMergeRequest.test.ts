@@ -135,7 +135,7 @@ describe('createGitLabMergeRequest', () => {
         branchName: 'new-mr',
         description: 'This MR is really good',
         draft: true,
-        targetPath: 'subdirectory',
+        targetPath: 'source',
       };
       mockFs({
         [workspacePath]: {
@@ -160,8 +160,10 @@ describe('createGitLabMergeRequest', () => {
         [
           {
             action: 'create',
-            filePath: 'foo/bar5',
-            content: 'some content',
+            filePath: 'source/foo.txt',
+            content: 'SGVsbG8gdGhlcmUh',
+            encoding: 'base64',
+            execute_filemode: false,
           },
         ],
       );
@@ -177,7 +179,7 @@ describe('createGitLabMergeRequest', () => {
         description: 'MR description',
         commitAction: 'create',
         draft: true,
-        targetPath: 'subdirectory',
+        targetPath: 'source',
       };
       mockFs({
         [workspacePath]: {
@@ -203,8 +205,10 @@ describe('createGitLabMergeRequest', () => {
         [
           {
             action: 'create',
-            filePath: 'foo/bar5',
-            content: 'some content',
+            filePath: 'source/foo.txt',
+            content: 'SGVsbG8gdGhlcmUh',
+            encoding: 'base64',
+            execute_filemode: false,
           },
         ],
       );
@@ -218,7 +222,7 @@ describe('createGitLabMergeRequest', () => {
         description: 'MR description',
         commitAction: 'update',
         draft: true,
-        targetPath: 'subdirectory',
+        targetPath: 'source',
       };
       mockFs({
         [workspacePath]: {
@@ -244,8 +248,10 @@ describe('createGitLabMergeRequest', () => {
         [
           {
             action: 'update',
-            filePath: 'foo/bar5',
-            content: 'some content',
+            filePath: 'source/foo.txt',
+            content: 'SGVsbG8gdGhlcmUh',
+            encoding: 'base64',
+            execute_filemode: false,
           },
         ],
       );
@@ -259,7 +265,7 @@ describe('createGitLabMergeRequest', () => {
         description: 'other MR description',
         commitAction: 'delete',
         draft: true,
-        targetPath: 'subdirectory',
+        targetPath: 'source',
       };
       mockFs({
         [workspacePath]: {
@@ -285,7 +291,10 @@ describe('createGitLabMergeRequest', () => {
         [
           {
             action: 'delete',
-            filePath: 'foo/bar5',
+            filePath: 'source/foo.txt',
+            content: 'SGVsbG8gdGhlcmUh',
+            encoding: 'base64',
+            execute_filemode: false,
           },
         ],
       );
